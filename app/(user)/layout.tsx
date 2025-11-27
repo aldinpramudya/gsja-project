@@ -9,7 +9,7 @@ export default function UserLayout({
     return (
         <div>
             <Navbar />
-            <main className="px-30 py-5">
+            <main className="">
                 {children}
             </main>
             <Footer />
