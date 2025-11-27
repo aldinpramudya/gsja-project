@@ -1,7 +1,9 @@
-export default function Footer(){
+export default function Footer() {
     return (
         <>
-            
+            <footer>
+                ini adalah footer
+            </footer>
         </>
     )
 }
