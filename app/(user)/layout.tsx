@@ -1,3 +1,6 @@
+import Footer from "@/ui/Footer";
+import Navbar from "@/ui/Navbar";
+
 export default function UserLayout({
     children
 }: Readonly<{
@@ -5,7 +8,11 @@ export default function UserLayout({
 }>) {
     return (
         <div>
-            {children}
+            <Navbar />
+            <main className="px-30 py-5">
+                {children}
+            </main>
+            <Footer />
         </div>
     );
 }
