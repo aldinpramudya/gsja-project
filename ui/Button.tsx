@@ -30,7 +30,7 @@ export default function Button({
     className = ''
 }: ButtonProps) {
     const baseStyles = "px-6 py-3 font-semibold uppercase text-white rounded-lg transition active:translate-y-1";
-    const styleEffects = "bg-[--main-color] shadow-[0_6px_0_var(--secondary-color)] active:shadow-[0_2px_0_var(--secondary-color)]";
+    const styleEffects = "bg-(--main-color) shadow-[0_6px_0_var(--secondary-color)] active:shadow-[0_2px_0_var(--secondary-color)]";
 
     const mergedClass = `${baseStyles} ${styleEffects} ${className}`;
 
