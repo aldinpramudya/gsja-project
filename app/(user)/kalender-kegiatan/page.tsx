@@ -1,7 +1,9 @@
+import TitlePageHero from "@/ui/TitlePageHero"
+
 export default function KalenderKegiatan() {
     return (
-        <div>
-            Test Kalender Kegiatan
-        </div>
+        <>
+            <TitlePageHero title="Kalender Kegiatan" images="/banner/kalender-kegiatan-banner.png"/>
+        </>
     )
 }

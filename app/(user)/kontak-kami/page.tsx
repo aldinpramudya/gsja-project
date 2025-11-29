@@ -1,9 +1,9 @@
+import TitlePageHero from "@/ui/TitlePageHero"
+
 export default function KontakKami() {
     return (
-        <div>
-            <h1>
-                Kontak kami Page
-            </h1>
-        </div>
+        <>
+            <TitlePageHero title="Kontak Kami" images="/banner/kontak-kami-banner.png"/>
+        </>
     )
 }
