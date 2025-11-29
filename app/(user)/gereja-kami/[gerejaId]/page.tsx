@@ -1,3 +1,7 @@
+import GerejaMapsComponents from "@/components/user/home/GerejaMapsComponents";
+import PictureCard from "@/ui/PictureCard";
+import TitlePageHero from "@/ui/TitlePageHero"
+
 export default async function GerejaDetail({
     params
 }: {
@@ -7,12 +11,17 @@ export default async function GerejaDetail({
 
     return (
         <div>
-            <h1>
-                test Gereja Gereja Detail
-            </h1>
-            <h2>
-                Gereja ID: {productId}
-            </h2>
+            <TitlePageHero title={productId} images="/banner/gereja-kami-banner.png" />
+            <GerejaMapsComponents />
+            <div className="flex justify-center py-10">
+                <div>
+                    <PictureCard />
+                    <div className="pt-10 text-[24px] text-center">
+                        <p>Pastor yang melayani :</p>
+                        <p className="text-(--main-color) font-bold">Pdt. Arnold</p>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
