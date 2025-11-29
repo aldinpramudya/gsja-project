@@ -1,7 +1,9 @@
+import TitlePageHero from "@/ui/TitlePageHero"
+
 export default function Artikel(){
     return (
-        <div>
-            Artikel Page
-        </div>
+        <>
+            <TitlePageHero title="Artikel" images="/banner/artikel-banner.png"/>
+        </>
     )
 }

@@ -1,7 +1,9 @@
+import TitlePageHero from "@/ui/TitlePageHero"
+
 export default function SusunanPanitia() {
     return (
-        <div>
-            Susunan Panitia Page
-        </div>
+        <>
+            <TitlePageHero title="Susunan Panitia" images="/banner/susunan-panitia-banner.png"/>
+        </>
     )
 }
