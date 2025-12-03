@@ -15,20 +15,15 @@ export const navbarLinks = [
     },
     {
         name: "Events",
-        submenu: [
-            {
-                name: "Kalender Kegiatan",
-                href: "/kalender-kegiatan"
-            },
-            {
-                name: "Susunan Panitia",
-                href: "/susunan-panitia"
-            }
-        ]
+        href: "/kalender-kegiatan"
     },
     {
         name: "Artikel",
         href: "/artikel"
+    },
+    {
+        name: "Pengurus Daerah",
+        href: "/susunan-panitia"
     },
     {
         name: "Kontak Kami",
