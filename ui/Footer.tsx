@@ -2,8 +2,11 @@
 
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
-import { footerLinks } from "@/constants";
 import Link from "next/link";
+
+// Footer Link Menu
+import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
     return (
@@ -64,25 +67,43 @@ export default function Footer() {
                     text-center md:text-left
                 "
                         >
-                            {footerLinks.map((section) => (
-                                <div key={section.title}>
-                                    <h3 className="text-lg font-bold mb-2 md:mb-4">{section.title}</h3>
+                            {/* Tentang Kami */}
+                            <div>
+                                <h3 className="text-lg font-bold mb-2 md:mb-4">Tentang Kami</h3>
+                                <ul className="space-y-2">
+                                    <li><Link href="/tentang-kami" className="hover:underline">Siapa Kami</Link></li>
+                                    <li><Link href="/gereja-kami" className="hover:underline">Gereja Kami</Link></li>
+                                    <li><Link href="/artikel" className="hover:underline">Artikel</Link></li>
+                                    <li><Link href="/susunan-panitia" className="hover:underline">Susunan Panitia</Link></li>
+                                </ul>
+                            </div>
 
-                                    <ul className="space-y-2">
-                                        {section.links.map((link) => (
-                                            <li key={link.name}>
-                                                <Link
-                                                    href={link.href}
-                                                    className="flex items-center justify-center md:justify-start gap-2 hover:underline"
-                                                >
-                                                    {link.icon && <span className="text-xl">{link.icon}</span>}
-                                                    <span>{link.name}</span>
-                                                </Link>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
+                            {/* Events */}
+                            <div>
+                                <h3 className="text-lg font-bold mb-2 md:mb-4">Events</h3>
+                                <ul className="space-y-2">
+                                    <li><Link href="/kalender-kegiatan" className="hover:underline">Kalender Kegiatan</Link></li>
+                                </ul>
+                            </div>
+
+                            {/* Kontak Kami */}
+                            <div>
+                                <h3 className="text-lg font-bold mb-2 md:mb-4">Kontak Kami</h3>
+                                <ul className="space-y-2">
+                                    <li>
+                                        <Link href="https://wa.me/" className="flex items-center justify-center md:justify-start gap-2 hover:underline">
+                                            <FaWhatsapp className="text-xl" />
+                                            WhatsApp
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="mailto:/" className="flex items-center justify-center md:justify-start gap-2 hover:underline">
+                                            <MdEmail className="text-xl" />
+                                            Email
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         {/* Block 2 End */}
                     </div>
