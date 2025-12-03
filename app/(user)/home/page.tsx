@@ -1,5 +1,5 @@
 import EventHighlightCard from "@/components/user/home/EventHighlightCard"
-import GerejaMapsComponents from "@/components/user/home/GerejaMapsComponents"
+import GerejaMapsComponents from "@/ui/GerejaMapsComponents"
 import TentangKamiComponents from "@/components/user/home/TentangKamiComponents"
 import MenuArticleComponents from "@/components/user/home/MenuArticleComponents"
 import TestimoniComponents from "@/components/user/home/TestimoniComponents"
@@ -26,7 +26,7 @@ export default function Home() {
                         </p>
                         {/* Button */}
                         <div className="pt-10">
-                            <Button href="/kontak-kami">Bergabung Dengan Kami !</Button>
+                            <Button href="/kalender-kegiatan">Bergabung Dengan Kami !</Button>
                         </div>
                         {/* Button End */}
                     </div>
@@ -47,7 +47,13 @@ export default function Home() {
             </div>
             {/* Kantor Pusat */}
             <div className="mt-20">
-                <GerejaMapsComponents />
+                <GerejaMapsComponents
+                    church_name="Sekolah Tinggi Teologi Satyabhakti"
+                    church_address="Jl. Raya Karanglo No.94 - 103, Karanglo, Banjararum, Kec. Singosari, Kabupaten Malang, Jawa Timur"
+                    church_number="0859463272"
+                    church_email="email@lalala.com"
+                    images="/images/card-photo.png"
+                />
             </div>
             {/* Kantor Pusat End */}
             {/* Tentang Kami */}

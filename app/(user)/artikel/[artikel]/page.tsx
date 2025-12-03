@@ -27,7 +27,7 @@ async function getArticle(slug: string): Promise<Article | null> {
         const response = await fetch(
             `${apiUrl}/articles/${slug}`,
             {
-                cache: 'no-store' // Atau gunakan revalidate untuk ISR
+                cache: 'no-store'
             }
         );
 
