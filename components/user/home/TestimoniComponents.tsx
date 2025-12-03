@@ -7,7 +7,7 @@ export default function TestimoniComponents() {
             <div className="flex items-center justify-center px-20 py-10 gap-16">
                 {/* Picture di tengah */}
                 <div className="flex justify-center">
-                    <PictureCard />
+                    <PictureCard images="/images/picture-rounded.png"/>
                 </div>
 
                 {/* Teks di tengah */}
