@@ -73,7 +73,7 @@ export default function MenuArticleComponents() {
                         <div className="flex space-x-5 ">
                             <RedirectCard image="/images/card-photo.png" title="Gereja Kami" excerpt="Temukan gereja kami di tempat terdekatmu !" link="/gereja-kami" />
                             <RedirectCard image="/images/church-event.jpg" title="Event Kami" excerpt="Bergabunglah dengan event kami !" link="/gereja-kami" />
-                            <RedirectCard image="/images/organization.jpg" title="Susunan Pengurus" excerpt="Kenali kami lebih dalam !" link="/susunan-pengurus"/>
+                            <RedirectCard image="/images/organization.jpg" title="Susunan Pengurus" excerpt="Kenali kami lebih dalam !" link="/susunan-panitia"/>
                         </div>
                     </div>
                 </div>

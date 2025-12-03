@@ -6,9 +6,6 @@ interface Pendeta {
     id: number;
     name_pendeta: string;
     image_pendeta: string;
-    salary: string;
-    created_at: string;
-    updated_at: string;
 }
 
 interface Gereja {
