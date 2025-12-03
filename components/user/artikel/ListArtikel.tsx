@@ -78,6 +78,7 @@ export default function ListArtikel() {
             {articles.map((article) => (
                 <BaseCard
                     key={article.id}
+                    baseUrl="/artikel"
                     image={article.article_image || '/images/article-photo.png'}
                     title={article.article_title}
                     excerpt={article.article_excerpt}

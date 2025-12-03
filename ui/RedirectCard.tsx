@@ -1,21 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
 
-interface BaseCardProps {
+interface RedirectCardProps {
     image: string;
     title: string;
-    excerpt: string;
-    slug: string;
-    baseUrl?: string;
+    excerpt : string;
+    link : string;
 }
 
-export default function BaseCard({
+export default function RedirectCard({
     image,
     title,
     excerpt,
-    slug,
-    baseUrl = ""
-}: BaseCardProps) {
+    link,
+}: RedirectCardProps) {
     return (
         <>
             <div className="relative w-full max-w-sm h-full min-h-[300px]">
@@ -52,7 +50,7 @@ export default function BaseCard({
 
                     {/* Link */}
                     <Link
-                        href={`${baseUrl}/${slug}`}
+                        href={`${link}`}
                         className="text-(--main-color) hover:underline text-[20px] font-bold inline-block"
                     >
                         Lihat Lebih Lanjut
@@ -60,6 +58,5 @@ export default function BaseCard({
                 </div>
             </div>
         </>
-
     )
 }
