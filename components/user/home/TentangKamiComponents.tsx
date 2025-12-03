@@ -21,7 +21,7 @@ export default function TentangKamiComponents() {
                         satu hati, satu iman, satu keluarga
                     </p>
                     <div className="pt-5">
-                        <BaseRedline width="80" height="2"/>
+                        <BaseRedline width="50" height="2"/>
                     </div>
                     <p className="text-[20px] pt-5 text-[#898989]">
                         Kami menyambut anda dengan penuh sukacita di Gereja kami, Kami disini ingin membagikan kabar kasih Yesus Kristus kepada dunia

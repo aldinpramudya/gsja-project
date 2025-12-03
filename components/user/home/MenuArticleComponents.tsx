@@ -15,7 +15,7 @@ export default function MenuArticleComponents() {
                 />
                 <div>
                     <div>
-                        <BaseRedline width="20" height="2" />
+                        <BaseRedline width="50" height="2"/>
                         <p className="text-(--main-color) uppercase font-bold text-[40px]">
                             menu
                         </p>
@@ -31,7 +31,7 @@ export default function MenuArticleComponents() {
             <div className="flex items-center justify-end space-x-10">
                 <div>
                     <div className="flex flex-col items-end">
-                        <BaseRedline width="20" height="2" />
+                        <BaseRedline width="50" height="2"/>
                         <p className="text-(--main-color) uppercase font-bold text-[40px]">
                             artikel
                         </p>
