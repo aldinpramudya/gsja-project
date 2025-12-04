@@ -1,9 +1,9 @@
-import EventHighlightCard from "@/components/user/home/EventHighlightCard"
 import GerejaMapsComponents from "@/ui/GerejaMapsComponents"
 import TentangKamiComponents from "@/components/user/home/TentangKamiComponents"
 import MenuArticleComponents from "@/components/user/home/MenuArticleComponents"
 import TestimoniComponents from "@/components/user/home/TestimoniComponents"
 import Button from "@/ui/Button"
+import EventHighlightComponents from "@/components/user/home/EventHighlightComponents"
 
 export default function Home() {
     return (
@@ -26,22 +26,15 @@ export default function Home() {
                         </p>
                         {/* Button */}
                         <div className="pt-10">
-                            <Button href="/kalender-kegiatan">Bergabung Dengan Kami !</Button>
+                            <Button href="/kontak-kami">Bergabung Dengan Kami !</Button>
                         </div>
                         {/* Button End */}
                     </div>
                 </div>
                 {/* Title Hero End */}
                 {/* Event Highlight List */}
-                <div className="absolute top-115 left-0 right-0">
-                    <div className="flex space-x-10 justify-center">
-                        <EventHighlightCard />
-                        <EventHighlightCard />
-                        <EventHighlightCard />
-                    </div>
-                </div>
-                <div className="mt-35 text-center">
-                    <Button href="/kontak-kami">Lihat event lainnya !</Button>
+                <div className="static">
+                    <EventHighlightComponents />
                 </div>
                 {/* Event Highlight List End */}
             </div>
