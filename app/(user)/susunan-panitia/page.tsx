@@ -82,7 +82,7 @@ export default async function SusunanPanitia() {
                                     key={panitia.id}
                                     className="flex flex-col items-center"
                                 >
-                                    <div>
+                                    <div className="flex flex-col items-center">
                                         {/* Image */}
                                         <div className="relative w-40 h-40 mb-4 rounded-full overflow-hidden border-4 border-(--main-color)">
                                             <Image
