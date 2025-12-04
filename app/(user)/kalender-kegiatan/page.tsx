@@ -140,7 +140,7 @@ export default async function KalenderKegiatan() {
                                 {/* Button */}
                                 <div className="flex gap-4">
                                     <Link
-                                        href={`/event/${event.slug_event}`}
+                                        href={`/kalender-kegiatan/${event.slug_event}`}
                                         className="flex-1 bg-(--main-color) text-white py-3 px-6 rounded-lg font-bold text-center hover:opacity-90 transition-opacity"
                                     >
                                         Lihat Detail

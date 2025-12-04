@@ -65,7 +65,7 @@ export default async function SusunanPanitia() {
 
     return (
         <>
-            <TitlePageHero title="Susunan Panitia" images="/banner/susunan-panitia-banner.png" />
+            <TitlePageHero title="Kepengurusan Daerah dan Departemen" images="/banner/panitia-banner.jpg" />
             <div className="px-90 py-20">
                 {/* Render grouped by position */}
                 {Object.entries(groupedPanitia).map(([position, members]) => (
@@ -76,27 +76,29 @@ export default async function SusunanPanitia() {
                         </h2>
 
                         {/* Members Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        <div className="flex justify-center space-x-8">
                             {members.map((panitia) => (
                                 <div
                                     key={panitia.id}
                                     className="flex flex-col items-center"
                                 >
-                                    {/* Image */}
-                                    <div className="relative w-40 h-40 mb-4 rounded-full overflow-hidden border-4 border-(--main-color)">
-                                        <Image
-                                            src={panitia.image_panitia || '/images/picture-rounded.png'}
-                                            alt={panitia.name_panitia}
-                                            fill
-                                            className="object-cover"
-                                            unoptimized={process.env.NODE_ENV === 'development'}
-                                        />
-                                    </div>
+                                    <div>
+                                        {/* Image */}
+                                        <div className="relative w-40 h-40 mb-4 rounded-full overflow-hidden border-4 border-(--main-color)">
+                                            <Image
+                                                src={panitia.image_panitia || '/images/picture-rounded.png'}
+                                                alt={panitia.name_panitia}
+                                                fill
+                                                className="object-cover"
+                                                unoptimized={process.env.NODE_ENV === 'development'}
+                                            />
+                                        </div>
 
-                                    {/* Name */}
-                                    <p className="text-xl font-bold text-center">
-                                        {panitia.name_panitia}
-                                    </p>
+                                        {/* Name */}
+                                        <p className="text-xl font-bold text-center">
+                                            {panitia.name_panitia}
+                                        </p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
