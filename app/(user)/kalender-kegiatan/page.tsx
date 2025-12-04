@@ -74,7 +74,7 @@ export default async function KalenderKegiatan() {
     return (
         <>
             <TitlePageHero title="Kalender Kegiatan" images="/banner/kalender-kegiatan-banner.png" />
-            <div className="px-90 py-20">
+            <div className="px-90 py-20 space-y-10">
                 {events.map((event) => (
                     <div
                         key={event.id}
